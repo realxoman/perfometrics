@@ -1,4 +1,5 @@
 import pycurl
+# import matplotlib.pyplot as plt
 
 class CurlUptime:
     '''
@@ -65,9 +66,30 @@ class CurlUptime:
         })
         self.close_session()
         return metrics
-        
+
+    # def plot_metrics(self) -> None:
+    #     # Get all metrics as a dictionary.
+    #     metrics = {
+    #         'dns_lookup': self.get_dns_lookup(),
+    #         'tcp': self.get_tcp(),
+    #         'ssl_tls': self.get_ssl_tls(),
+    #         'ttfb': self.get_ttfb(),
+    #         'data_transfer': self.get_data_transfer(),
+    #         'total': self.get_total()
+    #     }
+    #     self.close_session()
+
+    #     # Sort the metrics dictionary by value in descending order.
+    #     sorted_metrics = {k: v for k, v in sorted(metrics.items(), key=lambda item: item[1], reverse=True)}
+
+    #     # Create a vertical bar chart of the metrics.
+    #     fig, ax = plt.subplots()
+    #     ax.bar(list(sorted_metrics.keys()), list(sorted_metrics.values()))
+    #     ax.set_ylabel('Time (s)')
+    #     ax.set_title('Performance Metrics')
+    #     plt.xticks(rotation=45, ha='right') # Rotate x-axis labels for better readability
+    #     plt.show()    
 
     def close_session(self):
         # Close the pycurl session.
         self.curl_session.close()
-
