@@ -5,8 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='perfometrics',
-    version='0.0.2',
-    license='MIT',
+    version='0.0.3',
     author="Ali Esmaeili",
     author_email='hi@aliesm.com',
     packages=find_packages('src'),
@@ -21,7 +20,7 @@ setup(
     },
     python_requires=">=3.6",
     install_requires=[
-        "requests~=2.28.1",
+        "requests>=2.0.0",
         "pycurl>=7.0.0",
       ],
     classifiers=[
