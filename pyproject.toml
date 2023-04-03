@@ -1,0 +1,24 @@
+[project]
+name = "perfometrics"
+version = "0.0.1"
+authors = [
+  { name="Ali Esmaeili", email="hi@aliesm.com" },
+]
+keywords = ["performance", "metrics", "testing", "speed test"]
+description = "A python library to measure the performance metrics of a website"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0-or-later"
+dependencies = [
+  "requests~=2.28.1",
+  "pycurl>=7.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/realxoman/perfometrics"
+"Bug Tracker" = "https://github.com/realxoman/perfometrics/issues"
