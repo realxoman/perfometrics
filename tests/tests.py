@@ -1,7 +1,7 @@
 import unittest
 
-from uptime_utils.status_checker import StatusChecker
-from uptime_utils.curl import CurlUptime
+from perfometrics.status_checker import StatusChecker
+from perfometrics.curl import CurlUptime
 
 
 class TestCurl(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestCurl(unittest.TestCase):
 class TestStatusChecker(unittest.TestCase):
     
     def test_status_true(self):
-        url = 'https://alixo.ir'
+        url = 'https://zoomit.ir'
         state = StatusChecker(url)
         self.assertTrue(state.check_status())
 

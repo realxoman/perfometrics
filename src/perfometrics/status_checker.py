@@ -1,5 +1,5 @@
-from uptime_utils.domain_checker import DomainChecker
-from uptime_utils.decorators import *
+from perfometrics.domain_checker import DomainChecker
+from perfometrics.decorators import *
 
 class StatusChecker:
 
